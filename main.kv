@@ -1,0 +1,46 @@
+#:kivy 1.4
+
+BoxLayout:
+    orientation: "vertical"
+    BoxLayout:
+        orientation: "horizontal"
+        size_hint_y:0.1
+        Button:
+            size_hint_x: 0.8
+            on_press: app.search(self)
+            text: "Search"
+        Button:
+            size_hint_x: 0.2
+            on_press: app.quit(self)
+            text: "Exit"
+    TextInput:
+        id: text
+        font_name: 'fonts-japanese-gothic.ttf'
+        multiline: False
+        on_text_validate: app.search(self)
+        size_hint_y: 0.1
+        focus: True
+    ScrollView:
+        size_hint: (1, 1)
+        pos_hint: {'x': 0, 'y': 0}
+        GridLayout:
+            id: grid
+            cols: 1
+            padding: 2
+            spacing: 2
+            size_hint_y: None
+            height: self.minimum_height
+
+<MultiLineLabel@Label>:
+    color: 0, 0, 0, 1
+    font_name: 'fonts-japanese-gothic.ttf'
+    canvas.before:
+        Color:
+            rgb: 1, 1, 0.9
+        Rectangle:
+            size:self.size
+            pos: self.pos
+    text_size: self.width, None
+    size_hint_y: None
+    height: self.texture_size[1]
+    on_ref_press: app.tap_entry(args[1])
