@@ -1,0 +1,3 @@
+delete from kanji where literal in (select literal from kanji where meaning not like '%example%');
+select * from kanji where meaning like '%example%' ;
+select * from kanji
