@@ -4,7 +4,9 @@
 import sys
 from kivy.app import App
 from kivy.uix.label import Label
+print 'midori1 MAIN'
 from midori import Dictionary
+print 'midori2 MAIN'
 
 
 LIMIT = 100
@@ -70,6 +72,9 @@ class MainApp(App):
         for txt in rendered_kanji[:LIMIT] + rendered_compounds[:LIMIT]:
             box = MultiLineLabel(text=txt, markup=True)
             grid.add_widget(box)
+
+    def on_pause(self):
+        return True
 
     def quit(self, inst):
         sys.exit(0)
