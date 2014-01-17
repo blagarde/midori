@@ -4,9 +4,7 @@
 import sys
 from kivy.app import App
 from kivy.uix.label import Label
-print 'midori1 MAIN'
 from midori import Dictionary
-print 'midori2 MAIN'
 
 
 LIMIT = 100
