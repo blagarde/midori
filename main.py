@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-
 import sys
 from kivy.app import App
 from kivy.uix.label import Label
@@ -8,6 +7,15 @@ from midori import Dictionary
 
 
 LIMIT = 100
+
+
+def to_background():
+    from jnius import cast
+    from jnius import autoclass
+    PythonActivity = autoclass('org.renpy.android.PythonActivity')
+    currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
+    currentActivity.moveTaskToBack(True)
+
 
 class MultiLineLabel(Label):
     pass
@@ -51,6 +59,14 @@ class MainApp(App):
         self.dct = Dictionary('midori.db')
         self.txt = self.root.ids['text']
         self.redraw('', [], [])
+
+    def on_start(self):
+        from kivy.base import EventLoop
+        def bg(_, key, *args):
+            if key == 27:  # 'Back' button
+                to_background()
+                return True
+        EventLoop.window.bind(on_keyboard=bg)
 
     def tap_entry(self, txt):
         compounds, kanjis = self.dct.lookup(txt)
