@@ -5,6 +5,7 @@ Japanese dictionary Android app
 
 Dependencies:
 - kivy/python-for-android
+- pyjnius
 - pyparsing
 
 This is an Android version of my favorite Japanese-English dictionary app.
@@ -17,7 +18,7 @@ The skeleton database midori.db is limited to entries that contain the word 'exa
 1. Set-up [http://python-for-android.readthedocs.org/en/latest/toolchain/](python-for-android)
 2. Cross-compile Python with the required extensions/dependencies:
 ```
-python-for-android/distribute.sh -m 'kivy sqlite3 pyparsing'
+python-for-android/distribute.sh -m 'pyjnius kivy sqlite3 pyparsing'
 ```
 3. Connect the Android device (set *Settings* > *Developer options* > *USB debugging*), then build and push the app: 
 ```
