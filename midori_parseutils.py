@@ -15,7 +15,6 @@ segment = jp_word | tag | pos | comment
 segsep = Suppress(Word('}',exact=1))
 
 
-
 # Compound
 sep = Suppress(Word('{',exact=1))
 
