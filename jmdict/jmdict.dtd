@@ -24,7 +24,6 @@ Moved the <gram>, <field> and <misc> elements down to be in the
 some of the "*" as he suggested.  - 27 May 2000
 Added the re_nokanji element - Sep 2003.
 -->
-<!DOCTYPE JMdict [
 <!ELEMENT JMdict (entry*)>
 <!--                                                                   -->
 <!ELEMENT entry (ent_seq, k_ele*, r_ele+, info?, sense+)>
@@ -368,4 +367,3 @@ various information fields.
 <!ENTITY nab "Nagano-ben">
 <!ENTITY vt "transitive verb">
 <!ENTITY vulg "vulgar expression or word">
-]>
