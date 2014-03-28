@@ -259,7 +259,10 @@ various information fields.
 <!ENTITY X "rude or X-rated term (not displayed in educational software)">
 <!ENTITY abbr "abbreviation">
 <!ENTITY adj-i "adjective (keiyoushi)">
+<!ENTITY adj-ku "`ku' adjective (archaic)">
 <!ENTITY adj-na "adjectival nouns or quasi-adjectives (keiyodoshi)">
+<!ENTITY adj-na-a "archaic/formal form of na-adjective">
+<!ENTITY adj-shiku "`shiku' adjective (archaic)">
 <!ENTITY adj-no "nouns which may take the genitive case particle `no'">
 <!ENTITY adj-pn "pre-noun adjectival (rentaishi)">
 <!ENTITY adj-t "`taru' adjective">
@@ -296,6 +299,7 @@ various information fields.
 <!ENTITY int "interjection (kandoushi)">
 <!ENTITY io "irregular okurigana usage">
 <!ENTITY iv "irregular verb">
+<!ENTITY joc "jocular, humorous term">
 <!ENTITY ling "linguistics terminology">
 <!ENTITY m-sl "manga slang">
 <!ENTITY male "male term or language">
@@ -303,6 +307,7 @@ various information fields.
 <!ENTITY math "mathematics">
 <!ENTITY mil "military">
 <!ENTITY n "noun (common) (futsuumeishi)">
+<!ENTITY n-p "proper noun">
 <!ENTITY n-adv "adverbial noun (fukushitekimeishi)">
 <!ENTITY n-suf "noun, used as a suffix">
 <!ENTITY n-pref "noun, used as a prefix">
@@ -312,6 +317,7 @@ various information fields.
 <!ENTITY obs "obsolete term">
 <!ENTITY obsc "obscure term">
 <!ENTITY ok "out-dated or obsolete kana usage">
+<!ENTITY ok2 "old or irregular kana form">
 <!ENTITY on-mim "onomatopoeic or mimetic word">
 <!ENTITY pn "pronoun">
 <!ENTITY poet "poetical term">
@@ -327,9 +333,34 @@ various information fields.
 <!ENTITY uK "word usually written using kanji alone">
 <!ENTITY uk "word usually written using kana alone">
 <!ENTITY v1 "Ichidan verb">
+<!ENTITY v2a-mu "Nidan verb (lower class) with `mu' ending (archaic)">
+<!ENTITY v2a-ru-l "Nidan verb (lower class) with `ru' ending (archaic)">
+<!ENTITY v2a-dzu "Nidan verb (lower class) with `dzu' ending (archaic)">
+<!ENTITY v2a-gu-l "Nidan verb (lower class) with `gu' ending (archaic)">
+<!ENTITY v2a-fu-l "Nidan verb (lower class) with `hu/fu' ending (archaic)">
+<!ENTITY v2a-ku-l "Nidan verb (lower class) with `ku' ending (archaic)">
+<!ENTITY v2a-nu "Nidan verb (lower class) with `nu' ending (archaic)">
+<!ENTITY v2a-su "Nidan verb (lower class) with `su' ending (archaic)">
+<!ENTITY v2a-tsu-l "Nidan verb (lower class) with `tsu' ending (archaic)">
+<!ENTITY v2a-u "Nidan verb (lower class) with `u' ending and `we' conjugation (archaic)">
+<!ENTITY v2a-yu-l "Nidan verb (lower class) with `yu' ending (archaic)">
+<!ENTITY v2a-zu "Nidan verb (lower class) with `zu' ending (archaic)">
+<!ENTITY v2a-ru "Nidan verb (upper class) with `ru' ending (archaic)">
+<!ENTITY v2a-tsu "Nidan verb (upper class) with `tsu' ending (archaic)">
+<!ENTITY v2a-bu "Nidan verb (upper class) with `bu' ending (archaic)">
+<!ENTITY v2a-gu "Nidan verb (upper class) with `gu' ending (archaic)">
+<!ENTITY v2a-fu "Nidan verb (upper class) with `hu/fu' ending (archaic)">
+<!ENTITY v2a-ku "Nidan verb (upper class) with `ku' ending (archaic)">
+<!ENTITY v2a-yu "Nidan verb (upper class) with `yu' ending (archaic)">
 <!ENTITY v2a-s "Nidan verb with 'u' ending (archaic)">
 <!ENTITY v4h "Yondan verb with `hu/fu' ending (archaic)">
 <!ENTITY v4r "Yondan verb with `ru' ending (archaic)">
+<!ENTITY v4r2 "Yodan verb with `ru' ending (archaic)">
+<!ENTITY v4a-bu "Yodan verb with `bu' ending (archaic)">
+<!ENTITY v4a-fu- "Yodan verb with `hu/fu' ending (archaic)">
+<!ENTITY v4a-ku "Yodan verb with `ku' ending (archaic)">
+<!ENTITY v4a-su "Yodan verb with `su' ending (archaic)">
+<!ENTITY v4a-tsu "Yodan verb with `tsu' ending (archaic)">
 <!ENTITY v5 "Godan verb (not completely classified)">
 <!ENTITY v5aru "Godan verb - -aru special class">
 <!ENTITY v5b "Godan verb with `bu' ending">
@@ -358,6 +389,7 @@ various information fields.
 <!ENTITY kyb "Kyoto-ben">
 <!ENTITY osb "Osaka-ben">
 <!ENTITY ksb "Kansai-ben">
+<!ENTITY hkb "Hokkaido-ben">
 <!ENTITY ktb "Kantou-ben">
 <!ENTITY tsb "Tosa-ben">
 <!ENTITY thb "Touhoku-ben">
