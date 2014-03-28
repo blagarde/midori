@@ -13,6 +13,8 @@ def get_flike(xml_path):
 
 
 def fetch_xml(xml_path, dtd=None):
+    '''Download an XML and optionally validate it against a DTD.
+    Both arguments can either local or web URLs, and optionnaly gzipped'''
     flike = get_flike(xml_path)
     xml = etree.XML(flike.read())
     if dtd is not None:
