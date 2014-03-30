@@ -1,7 +1,7 @@
 import urllib2
 import gzip
 from StringIO import StringIO
-from lxml import etree
+from lxml import etree, objectify
 
 
 isurl = lambda u: any([u.startswith(i + '://') for i in 'http https ftp'.split()])
@@ -16,10 +16,15 @@ def fetch_xml(xml_path, dtd=None):
     '''Download an XML and optionally validate it against a DTD.
     Both arguments can either local or web URLs, and optionnaly gzipped'''
     flike = get_flike(xml_path)
-    xml = etree.XML(flike.read())
     if dtd is not None:
         print "Validating %s XML with %s DTD..." % (xml_path, dtd)
+        xml = etree.XML(flike.read())
         dtd = etree.DTD(get_flike(dtd))
         dtd.validate(xml)
-    flike.seek(0)
+        flike.seek(0)
     return flike
+
+
+def obj_xml(xml, dtd):
+    fh = fetch_xml(xml, dtd=dtd)
+    return objectify.fromstring(fh.read())
